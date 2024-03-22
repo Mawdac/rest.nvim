@@ -31,16 +31,10 @@ function autocmds.setup()
     callback = function(args)
       vim.keymap.set("n", keybinds.prev, function()
         functions.cycle_result_pane("prev")
-      end, {
-        desc = "Go to previous winbar pane",
-        buffer = keybinds.buffer_local and args.buf or nil,
-      })
-      vim.keymap.set("n", keybinds.next, function()
+      end, { desc = "Go to previous winbar pane", buffer = true })
+      vim.keymap.set("n", "L", function()
         functions.cycle_result_pane("next")
-      end, {
-        desc = "Go to next winbar pane",
-        buffer = keybinds.buffer_local and args.buf or nil,
-      })
+      end, { desc = "Go to next winbar pane", buffer = true })
       vim.keymap.set("n", "?", result_help.open, {
         desc = "Open rest.nvim request results help window",
         buffer = args.buf,

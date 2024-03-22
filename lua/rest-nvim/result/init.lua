@@ -76,6 +76,7 @@ function result.get_or_create_buf()
   vim.api.nvim_buf_set_name(new_bufnr, tmp_name)
   vim.api.nvim_set_option_value("ft", "httpResult", { buf = new_bufnr })
   vim.api.nvim_set_option_value("buftype", "nofile", { buf = new_bufnr })
+  vim.api.nvim_set_option_value("buflisted", false, { buf = new_bufnr })
 
   result.bufnr = new_bufnr
   return new_bufnr
