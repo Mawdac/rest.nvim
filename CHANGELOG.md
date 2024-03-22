@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.2](https://github.com/rest-nvim/rest.nvim/compare/v2.0.1...v2.0.2) (2024-03-22)
+
+
+### Bug Fixes
+
+* **run last:** not modify body in order to use it again ([9598c89](https://github.com/rest-nvim/rest.nvim/commit/9598c893ac8e6aee2e3e0dc526f2c44bc4889ba9))
+
 ## [2.0.1](https://github.com/rest-nvim/rest.nvim/compare/v2.0.0...v2.0.1) (2024-03-19)
 
 
